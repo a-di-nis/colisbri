@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <!-- Call to Action -->
+
+    <section id="contact" class="call-to-action text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-xl-9 mx-auto">
+                    <h2 class="mb-4">VOUS ÊTES INTERESSÉ ?
+                    </h2>
+                    <!-- <h5>Laissez-le nous savoir dans ces rapides questionnaires !</h5> -->
+                    <h5 class="mb-5">Inscrivez-vous à notre newsletter !</h5>
+                </div>
+                <div class="col-12 mx-auto">
+                    <form id="contactForm">
+                        <!-- <form id="contactForm" action="/" method="post" name="sentMessage" onsubmit="return(validate());"> -->
+                        <!--add novalidate="novalidate" if you don't want the validatin to go through -->
+                        <div class="row align-items-stretch">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="name" name="name" type="text" oninput="hideElem();"
+                                        placeholder="Prénom *"
+                                        data-validation-required-message="Please enter your name." />
+                                    <p id="name-error" class="help-block text-danger">Veuillez entrer votre prénom</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="surname" name="surname" type="text" oninput="hideElem();"
+                                        placeholder="Nom *"
+                                        data-validation-required-message="Please enter your name." />
+                                    <p id="surname-error" class="help-block text-danger">Veuillez entrer votre nom</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-stretch">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="email" name="email" type="text" oninput="hideElem();"
+                                        placeholder="Email *"
+                                        data-validation-required-message="Please enter your email address." />
+                                    <p id="email-error" class="help-block text-danger">Veuillez entrer votre email</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="company" name="company" type="text"
+                                        placeholder="Nom entreprise " />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center send-button">
+                            <!-- <div id="success"></div> -->
+                            <button class="btn btn-light text-uppercase" id="sendMessageButton"
+                                type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                    <h4 id="success-message"></h4>
+                    <h4 id="error-message" class="text-danger"></h4>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</html>
